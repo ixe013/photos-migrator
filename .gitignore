@@ -1,0 +1,5 @@
+/target
+.photos-migrator.db*
+invitation_report.md
+credentials.json
+token_*.json

@@ -1,0 +1,33 @@
+[package]
+name = "photos-migrator"
+version = "0.1.0"
+edition = "2021"
+authors = ["Antigravity"]
+description = "A self-contained tool to process Google Takeout archives, embed metadata, and migrate photos and albums to Google Photos."
+
+[dependencies]
+clap = { version = "4.5", features = ["derive", "cargo", "env"] }
+dialoguer = "0.11"
+console = "0.15"
+indicatif = { version = "0.17", features = ["rayon"] }
+tokio = { version = "1.40", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls", "json", "stream"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+hex = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+walkdir = "2.5"
+regex = "1.10"
+tiny_http = "0.12"
+open = "5.3"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+little_exif = "0.6"
+img-parts = "0.3"
+url = "2.5"
+rand = "0.8"
+futures = "0.3"
+directories = "5.0"
+base64 = "0.22"
